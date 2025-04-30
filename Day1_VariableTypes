@@ -8,7 +8,7 @@ public class Main{
     public void call(){
         //local variable
         String Name = "karl";
-        System.out.println("school name: " + school_name);
+        System.out.println("school name: " + Main.school_name);
         System.out.println("Name: " + Name);
         System.out.println("Age: " + age);
 
