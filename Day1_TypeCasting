@@ -1,0 +1,18 @@
+public class TypeCasting {
+    public static void main(String[] args){
+        int i = 40;
+        //converted int to double
+        double j = (double)  i;
+        //converted int to float
+        float k = (float) i;
+        float a = 44.5f;
+        //converted float to int
+        int s = (int) a;
+
+        System.out.println("int i: " + i);
+        System.out.println("double j: " + j);
+        System.out.println("float k: " + k);
+        System.out.println("float a: " + a);
+        System.out.println("int s: " + s);
+    }
+}
