@@ -1,0 +1,10 @@
+public class StringConcatenate {
+    public static void main(String[] args){
+        String firstname = "Sagar";
+        String lastname = "Gummadi";
+        //string concatenating using + operator
+        System.out.println("My name is: " + firstname + " " + lastname);
+        //string concatenating using String.concat() method
+        System.out.println(("My name is: ").concat(firstname).concat(" ").concat(lastname));
+    }
+}
