@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class If_Else_if {
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter marks 0 to 100: ");
+        int Marks = sc.nextInt();
+
+        if(Marks>90 && Marks<=100){
+            System.out.println("You got A+");
+        } else if (Marks>80 && Marks<=90) {
+            System.out.println("You got A");
+        } else if (Marks>70 && Marks<=80) {
+            System.out.println("You got B+");
+        } else if (Marks>60 && Marks<=70) {
+            System.out.println("You got B");
+        } else if (Marks>50 && Marks<=60) {
+            System.out.println("You got c+");
+        } else if (Marks>40 && Marks<=50) {
+            System.out.println("You got C");
+        } else if (Marks>=33 && Marks<=40) {
+            System.out.println("You got D");
+        }else {
+            System.out.println("Failed");
+        }
+    }
+}
