@@ -1,0 +1,13 @@
+public class WrapperClass {
+    public static void main(String[] args){
+        
+        int a = 68;  //DataType is int initially.
+        System.out.println(a);
+        System.out.println("DataType int: " + a);
+
+        Object obj = a;  //DataType changed to Integer.
+        System.out.println(obj);
+        System.out.println("DataType obj: " + obj.getClass().getName());
+
+    }
+}
