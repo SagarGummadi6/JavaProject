@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class If_Else {
+    public static void main(String[] args){;
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first name: ");
+        String name = sc.nextLine();
+        System.out.print("Enter second name: ");
+        String name2 = sc.nextLine();
+
+        if(name.length() == name2.length()){
+            System.out.println("Both the names have same number of letters.");
+        }else {
+            System.out.println("Both the names does not have same number of letters.");
+        }
+
+        sc.close();
+    }
+}
