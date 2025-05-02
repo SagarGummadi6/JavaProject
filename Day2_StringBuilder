@@ -1,0 +1,12 @@
+public class StringBuilderProgram {
+    public static void main(String[] args){
+        StringBuilder str = new StringBuilder("Brad");
+        System.out.println(str);
+        str.append(" Cole");
+        System.out.println(str);
+        String name = "Nicole";
+        System.out.println(name);
+        str.append(" " + name);
+        System.out.println(str);
+    }
+}
