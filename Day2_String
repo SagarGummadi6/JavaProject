@@ -1,0 +1,16 @@
+public class StringProgram {
+    public static void main(String[] args){
+        String str = "Harold";
+        String str1 = new String("Karol");
+        System.out.println(str);
+        System.out.println(str1);
+        System.out.println(str + " and " + str1);
+        System.out.println("str length: " + str.length());
+        System.out.println("str1 length: " + str1.length());
+        System.out.println("Str length: " + str.toUpperCase());
+        System.out.println("Str length: " + str.toLowerCase());
+        System.out.println("Str1 length: " + str1.toUpperCase());
+        System.out.println("Str1 length: " + str1.toLowerCase());
+
+    }
+}
