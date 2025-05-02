@@ -1,0 +1,10 @@
+public class StringBufferProgram {
+    public static void main(String[] args){
+        StringBuffer str = new StringBuffer("Jack");
+        System.out.println(str);
+        String name = "Lane";
+        System.out.println(name);
+        str = new StringBuffer(name).append(" Mane");
+        System.out.println(str);
+    }
+}
