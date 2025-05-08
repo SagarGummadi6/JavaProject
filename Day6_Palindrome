@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Palindrome {
+
+    public static String check(String word,int first,int last){
+        if(first>=last){
+            return ("Yes it is a palindrome");
+        }
+        if(word.charAt(first) != word.charAt(last)){
+            return ("It is not a palindrome");
+        }
+        return check(word, first+1, last-1);
+    }
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the word: ");
+        String word = sc.nextLine();
+        System.out.println(check(word,0,word.length()-1));
+    }
+}
