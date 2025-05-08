@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class PowerCalculation {
+
+    public static int calculate(int base,int power){
+        if(power==0){
+            return 1;
+        }
+        return base*calculate(base,power-1);
+    }
+
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter the number: ");
+        int base=sc.nextInt();
+        System.out.print("Enter the power: ");
+        int power=sc.nextInt();
+        int result = calculate(base,power);
+        System.out.println(result);
+    }
+}
