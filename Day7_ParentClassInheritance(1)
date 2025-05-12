@@ -1,0 +1,4 @@
+public class ParentClassInheritance {
+    static String name= "Hummer";
+    static int age = 65;
+}
