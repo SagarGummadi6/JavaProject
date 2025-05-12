@@ -1,0 +1,11 @@
+public class MethodOverridingChild extends MethodOverridingParent {
+    @Override
+    public void eat(){
+        super.eat();
+        System.out.println("I only eat's.");
+    }
+    public static void main(String[] args){
+        MethodOverridingChild obj = new MethodOverridingChild();
+        obj.eat();
+    }
+}
