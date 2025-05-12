@@ -1,0 +1,17 @@
+public class MethodOverloading {
+
+    int call(int a, int b){
+        return (a*b);
+    }
+
+    int call(int a, int b, int c){
+        return (a+b+c);
+    }
+
+    public static void main(String[] args){
+        MethodOverloading obj = new MethodOverloading();
+        System.out.println(obj.call(2,4));
+        System.out.println(obj.call(2,3,5));
+
+    }
+}
