@@ -1,0 +1,7 @@
+public abstract class AbstractPayment {
+    abstract void processPayment();
+    abstract void initializeTransaction();
+    void confirmPayment(){
+        System.out.println("Payment confirmed!");
+    }
+}
