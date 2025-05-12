@@ -1,0 +1,5 @@
+public class MethodOverridingParent {
+    public void eat(){
+        System.out.println("Everyone eat's");
+    }
+}
