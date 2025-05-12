@@ -1,0 +1,25 @@
+public class FieldsAndMethods {
+    String name;
+    int age;
+    long  phone_number;
+
+    void display(){
+        System.out.println(name);
+        System.out.println(age);
+        System.out.println(phone_number);
+    }
+    public static void main(String[] args){
+        FieldsAndMethods kane = new FieldsAndMethods();
+        kane.name= "My name is kane";
+        kane.age= 34;
+        kane.phone_number=3344556677L;
+        kane.display();
+
+        FieldsAndMethods bane = new FieldsAndMethods();
+        bane.name="My name is bane";
+        bane.age= 40;
+        bane.phone_number=1122334455l;
+        bane.display();
+
+    }
+}
