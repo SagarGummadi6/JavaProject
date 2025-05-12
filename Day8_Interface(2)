@@ -1,0 +1,28 @@
+public class InterfaceImplementation implements InterfaceControls {
+         public boolean isOn = false;
+        @Override
+        public void turnon () {
+            isOn = true;
+            System.out.println("ON");
+            status();
+        }
+
+        @Override
+        public void turnoff () {
+            isOn = false;
+            System.out.println("OFF");
+            status();
+        }
+
+        @Override
+        public void status () {
+            String Status = isOn ? "ON" : "OFF";
+            System.out.println("Device is " + Status);
+        }
+        public static void main(String[] args){
+            InterfaceImplementation obj = new InterfaceImplementation();
+            obj.turnoff();
+            obj.turnon();
+        }
+
+}
