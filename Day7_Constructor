@@ -1,0 +1,18 @@
+public class Constructor {
+    String name;
+    int age;
+    long  phone_number;
+
+    void show(String a, int b, long c){
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+    }
+    public static void main(String[] args){
+        Constructor kane = new Constructor();
+        kane.name= "My name is kane";
+        kane.age= 34;
+        kane.phone_number=3344556677L;
+        kane.show(kane.name, kane.age, kane.phone_number);
+    }
+}
