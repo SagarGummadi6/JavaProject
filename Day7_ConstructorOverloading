@@ -1,0 +1,14 @@
+public class ConstructorOverloading {
+
+    public ConstructorOverloading(int i, int j){
+        System.out.println(i*j);
+    }
+
+    public ConstructorOverloading(int i, int j, int k){
+        System.out.println(i+j+k);
+    }
+
+    public static void main(String[] args){
+        ConstructorOverloading obj = new ConstructorOverloading(4,3);
+    }
+}
