@@ -1,0 +1,19 @@
+public class CreditCardPayment extends AbstractPayment {
+
+    @Override
+    void processPayment() {
+        initializeTransaction();
+        System.out.println("Processing Credit Card Payment");
+        confirmPayment();
+    }
+
+    @Override
+    void initializeTransaction() {
+        System.out.println("Initializing Credit Card Payment");
+    }
+
+    public static void main(String[] args){
+        CreditCardPayment obj = new CreditCardPayment();
+        obj.processPayment();
+    }
+}
