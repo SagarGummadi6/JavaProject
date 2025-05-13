@@ -1,0 +1,23 @@
+interface A{
+    void Greet();
+}
+interface B{
+    void greet();
+}
+
+public class MultipleInterfaces implements A,B {
+    @Override
+    public void Greet() {
+        System.out.println("HELLO");
+    }
+
+    @Override
+    public void greet() {
+        System.out.println("BYE");
+    }
+    public static void main(String[] args){
+        MultipleInterfaces obj = new MultipleInterfaces();
+        obj.Greet();
+        obj.greet();
+    }
+}
