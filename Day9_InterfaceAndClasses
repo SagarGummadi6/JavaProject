@@ -1,0 +1,26 @@
+interface Animal1{
+    void sound1();
+}
+class dog implements Animal1{
+
+    @Override
+    public void sound1() {
+        System.out.println("Bark bark");
+    }
+}
+class cat implements Animal1{
+
+    @Override
+    public void sound1() {
+        System.out.println("Meow meow");
+    }
+}
+
+public class InterfaceAndClasses {
+    public static void main(String[] args){
+        Animal1 a1 = new dog();
+        Animal1 a2 = new cat();
+        a1.sound1();
+        a2.sound1();
+    }
+}
