@@ -1,0 +1,18 @@
+class Automobile{
+    void show(){
+        System.out.println("This is automobile.");
+    }
+}
+class Car extends Automobile{
+    @Override
+    void show(){
+        System.out.println("This is Car");
+        super.show();
+    }
+}
+public class MethodOverriding {
+    public static void main(String[] args){
+        Automobile obj = new Car();
+        obj.show();
+    }
+}
