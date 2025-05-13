@@ -1,0 +1,20 @@
+abstract class plant{
+    abstract void LeafColor();
+    public void Height(){
+        System.out.println("plants are very tall.");
+    }
+
+}
+
+public class Abstractclass extends plant {
+
+    @Override
+    void LeafColor() {
+        System.out.println("color is green.");
+    }
+    public static void main(String[] args){
+        Abstractclass obj = new Abstractclass();
+        obj.LeafColor();
+        obj.Height();
+    }
+}
