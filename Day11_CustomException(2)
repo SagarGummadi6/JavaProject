@@ -1,0 +1,15 @@
+public class CustomExceptionCall {
+    public static void main(String[] args){
+        try {
+            doSomething();
+        } catch (CustomException e) {
+            System.out.println("Caught custom exception: " + e.getMessage());
+        }
+    }
+
+    public static void doSomething() throws CustomException {
+        // Simulate an error
+        throw new CustomException("Something went wrong!");
+    }
+
+}
