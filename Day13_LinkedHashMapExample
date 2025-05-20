@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class LinkedHashMapExample {
+    public static void main(String[] args) {
+        Map<String, Integer> map = new LinkedHashMap<>();
+
+        map.put("X", 100);
+        map.put("Y", 200);
+        map.put("Z", 300);
+
+        System.out.println("LinkedHashMap (insertion order): " + map);
+        System.out.println("Contains key Y: " + map.containsKey("Y"));
+        System.out.println("Contains value 300: " + map.containsValue(300));
+
+        map.remove("Y");
+        map.putIfAbsent("W", 400);
+        map.replace("X", 150);
+        System.out.println(map.entrySet());
+        System.out.println(map.values());
+
+        System.out.println(map);
+    }
+}
