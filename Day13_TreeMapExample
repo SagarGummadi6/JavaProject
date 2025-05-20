@@ -1,0 +1,27 @@
+import java.util.*;
+
+public class TreeMapExample {
+    public static void main(String[] args) {
+        Map<String, Integer> map = new TreeMap<>();
+
+        map.put("Banana", 5);
+        map.put("Apple", 10);
+        map.put("Orange", 8);
+
+        System.out.println("TreeMap: " + map);
+
+
+        map.remove("Banana");
+        map.replace("Apple", 15);
+        map.putIfAbsent("Mango", 12);
+
+        System.out.println("After updates: " + map);
+
+        System.out.println("Keys: " + map.keySet());
+        System.out.println("Values: " + map.values());
+        System.out.println("Entries:");
+        for (Map.Entry<String, Integer> entry : map.entrySet()) {
+            System.out.println(entry.getKey() + " => " + entry.getValue());
+        }
+    }
+}
